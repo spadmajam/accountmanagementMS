@@ -42,11 +42,11 @@ public class AccountsController {
         return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
     }
 
-    @GetMapping
+    /*@GetMapping
     public String showMessage()
     {
         return "This is a AWS CI/CD test";
-    }
+    }*/
 
     @DeleteMapping("/{id}")
     public ResponseEntity<String> deleteAccount(@PathVariable Long id) {
